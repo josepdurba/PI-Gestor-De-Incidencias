@@ -27,6 +27,7 @@ CREATE TABLE IF NOT EXISTS `estados` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3;
 
 -- Volcando datos para la tabla pi_gestor_incidencias.estados: ~3 rows (aproximadamente)
+DELETE FROM `estados`;
 INSERT INTO `estados` (`id`, `estado`) VALUES
 	(1, 'Abierta'),
 	(2, 'En proceso'),
@@ -48,6 +49,7 @@ CREATE TABLE IF NOT EXISTS `incidencias` (
 ) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb3;
 
 -- Volcando datos para la tabla pi_gestor_incidencias.incidencias: ~10 rows (aproximadamente)
+DELETE FROM `incidencias`;
 INSERT INTO `incidencias` (`id`, `fk_estado`, `fk_usuario`, `descripcion`, `observaciones`, `fecha`) VALUES
 	(1, 1, 9, 'Incidencia de sistema 36', 'Observación automática', '2026-01-28'),
 	(2, 2, 1, 'Incidencia de sistema 269', 'Observación automática', '2026-02-19'),
@@ -74,6 +76,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb3;
 
 -- Volcando datos para la tabla pi_gestor_incidencias.usuarios: ~11 rows (aproximadamente)
+DELETE FROM `usuarios`;
 INSERT INTO `usuarios` (`id`, `DNI`, `nombre`, `apellido`, `tlf`, `email`, `contrasena_hash`) VALUES
 	(1, '12345678T', 'Paco', 'Rodriguez Rodriguez', '619546987', 'paco.rodriguez@gmail.com', '03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4'),
 	(2, '33951440J', 'Sara', 'García López ', '626252229', 'sara.garcia@gmail.com', '03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4'),
