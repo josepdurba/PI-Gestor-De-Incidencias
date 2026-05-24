@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Nueva incidencia</title>
+
+    <link rel="icon" type="image/svg+xml" href="assets/img/JJL_logo.svg?v=2">
+    <link href="https://fonts.googleapis.com/css2?family=Athiti&family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <img src="assets/img/JJL_logo.svg" alt="Logo JJL" class="logo-fixed">
+
+    <div class="top-bar">
+        <h1>NUEVA INCIDENCIA</h1>
+    </div>
+
+    <div class="container incidencia-form">
+        <form id="incidenciaForm" action="crear-incidencia" method="post">
+
+            <div class="campo">
+                <label for="descripcion">Descripción *</label>
+                <textarea id="descripcion" name="descripcion"></textarea>
+            </div>
+
+            <div class="campo">
+                <label for="observaciones">Observaciones</label>
+                <textarea id="observaciones" name="observaciones"></textarea>
+            </div>
+
+            <button type="submit">REGISTRAR</button>
+
+            <p id="mensajeError"></p>
+
+        </form>
+    </div>
+<script src="js/crearIncidencia.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+c:\Users\PC\Desktop\v\Gestor-incidencias JJL 25-05-2026\src\main\java\com\gestorincidencias\controller\CrearIncidenciaServlet.java
+c:\Users\PC\Desktop\v\Gestor-incidencias JJL 25-05-2026\src\main\java\com\gestorincidencias\controller\EstadoIncidenciasServlet.java
+c:\Users\PC\Desktop\v\Gestor-incidencias JJL 25-05-2026\src\main\java\com\gestorincidencias\controller\LoginServlet.java
+c:\Users\PC\Desktop\v\Gestor-incidencias JJL 25-05-2026\src\main\java\com\gestorincidencias\controller\ModificarEstadoServlet.java
+c:\Users\PC\Desktop\v\Gestor-incidencias JJL 25-05-2026\src\main\java\com\gestorincidencias\dao\IncidenciaDAO.java
+c:\Users\PC\Desktop\v\Gestor-incidencias JJL 25-05-2026\src\main\java\com\gestorincidencias\dao\UsuarioDAO.java
+c:\Users\PC\Desktop\v\Gestor-incidencias JJL 25-05-2026\src\main\java\com\gestorincidencias\model\Incidencia.java
+c:\Users\PC\Desktop\v\Gestor-incidencias JJL 25-05-2026\src\main\java\com\gestorincidencias\model\IncidenciaView.java
+c:\Users\PC\Desktop\v\Gestor-incidencias JJL 25-05-2026\src\main\java\com\gestorincidencias\model\Usuario.java
+c:\Users\PC\Desktop\v\Gestor-incidencias JJL 25-05-2026\src\main\java\com\gestorincidencias\util\Conexion.java
+c:\Users\PC\Desktop\v\Gestor-incidencias JJL 25-05-2026\src\main\java\com\gestorincidencias\util\PasswordUtil.java
+c:\Users\PC\Desktop\v\Gestor-incidencias JJL 25-05-2026\src\main\java\Main.java
