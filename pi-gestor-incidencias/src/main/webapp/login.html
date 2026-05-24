@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+    <link rel="icon" type="image/svg+xml" href="assets/img/JJL_logo.svg?v=2">
+    <link href="https://fonts.googleapis.com/css2?family=Athiti&family=Alegreya+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+    <img src="assets/img/JJL_logo.svg" alt="Logo JJL" class="logo-fixed">
+
+    <div class="top-bar">
+
+        <h1>REGISTRO DEL USUARIO</h1>
+
+    </div>
+
+
+    <div class="container">
+
+        <form id="loginForm" action="login" method="post">
+
+            <label for="usuario">Nombre</label>
+            <input type="text" id="usuario" name="nombre">
+
+            <label for="password">Password</label>
+
+            <div class="password-container">
+                <input type="password" id="password" name="password">
+                <span id="verPass">👁</span>
+            </div>
+
+            <button type="submit">LOGIN</button>
+
+             <p id="mensajeError"></p>
+
+        </form>
+
+    </div>
+
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>
