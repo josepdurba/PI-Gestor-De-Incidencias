@@ -140,6 +140,16 @@ private static final String USER = "root";
 private static final String PASSWORD = "1234";
 ```
 
+### 5. Compilar y ejecutar
+
+El proyecto puede ejecutarse desde un IDE compatible
+(IntelliJ, Eclipse o VSCode con soporte Maven).
+
+Opcionalmente, puede compilarse manualmente mediante:
+
+```bash
+mvn clean install
+
 ## 🧪 Testing
 
 El proyecto incluye pruebas unitarias automatizadas con **JUnit 5**:
