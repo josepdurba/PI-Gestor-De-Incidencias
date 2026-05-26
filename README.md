@@ -2,7 +2,7 @@
 
 Aplicación web desarrollada en **Java con Jakarta Servlets** y **MySQL**, que permite gestionar incidencias dentro de un sistema con autenticación de usuarios y control de roles.
 
-Los usuarios pueden crear y consultar incidencias, mientras que los administradores pueden gestionarlas y actualizar su estado.
+Los usuarios pueden crear y consultar incidencias, y los administradores ademas pueden gestionarlas y actualizar su estado.
 
 ---
 
