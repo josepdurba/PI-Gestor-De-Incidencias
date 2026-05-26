@@ -150,6 +150,8 @@ Opcionalmente, puede compilarse manualmente mediante:
 ```bash
 mvn clean install
 
+---
+
 ## 🧪 Testing
 
 El proyecto incluye pruebas unitarias automatizadas con **JUnit 5**:
