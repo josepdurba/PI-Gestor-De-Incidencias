@@ -11,7 +11,7 @@ Clic derecho sobre ella.
 Selecciona Eliminar o Drop database.
 Confirma la eliminación.
 3. Abrir el archivo SQL
-En el menú superior, pulsa Archivo → Cargar archivo SQL...
+En el menú superior, pulsa Archivo → Cargar archivo SQL... (O ejecutar en caso de que de error el cargar)
 (también puedes arrastrar el archivo Test.sql a HeidiSQL).
 Selecciona el archivo Test.sql.
 4. Ejecutar el script
