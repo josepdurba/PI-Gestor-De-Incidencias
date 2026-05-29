@@ -1,0 +1,28 @@
+Actualizar la base de datos pi-gestor-incidencias en HeidiSQL
+1. Abrir HeidiSQL
+Inicia HeidiSQL.
+Conéctate al servidor donde está la base de datos.
+2. Eliminar la base de datos actual
+
+⚠️ Esto borrará todos los datos existentes de la base de datos actual.
+
+En el panel izquierdo, localiza pi-gestor-incidencias.
+Clic derecho sobre ella.
+Selecciona Eliminar o Drop database.
+Confirma la eliminación.
+3. Abrir el archivo SQL
+En el menú superior, pulsa Archivo → Cargar archivo SQL...
+(también puedes arrastrar el archivo Test.sql a HeidiSQL).
+Selecciona el archivo Test.sql.
+4. Ejecutar el script
+Se abrirá el contenido del archivo en una pestaña.
+Pulsa el botón Ejecutar (▶) o presiona F9.
+5. Esperar a que termine
+HeidiSQL ejecutará todas las instrucciones del archivo.
+Si no aparece ningún error, la base de datos se habrá creado correctamente.
+6. Actualizar la lista de bases de datos
+Pulsa F5 o haz clic derecho sobre el servidor y selecciona Actualizar.
+7. Comprobar que todo está correcto
+Busca la base de datos pi-gestor-incidencias.
+Despliega sus tablas.
+Verifica que las tablas y los datos se han creado correctamente.
