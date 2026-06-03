@@ -24,14 +24,15 @@ CREATE TABLE IF NOT EXISTS `estados` (
   `id` int NOT NULL AUTO_INCREMENT,
   `estado` varchar(15) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
 
--- Volcando datos para la tabla pi_gestor_incidencias.estados: ~3 rows (aproximadamente)
+-- Volcando datos para la tabla pi_gestor_incidencias.estados: ~4 rows (aproximadamente)
 DELETE FROM `estados`;
 INSERT INTO `estados` (`id`, `estado`) VALUES
 	(1, 'Abierta'),
 	(2, 'En proceso'),
-	(3, 'Resuelta');
+	(3, 'Resuelta'),
+	(4, 'Cerrada');
 
 -- Volcando estructura para tabla pi_gestor_incidencias.incidencias
 CREATE TABLE IF NOT EXISTS `incidencias` (
@@ -46,12 +47,12 @@ CREATE TABLE IF NOT EXISTS `incidencias` (
   KEY `fk_incidencias_Usuario1_idx` (`fk_usuario`),
   CONSTRAINT `fk_incidencias_estado` FOREIGN KEY (`fk_estado`) REFERENCES `estados` (`id`),
   CONSTRAINT `fk_incidencias_Usuario1` FOREIGN KEY (`fk_usuario`) REFERENCES `usuarios` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb3;
 
--- Volcando datos para la tabla pi_gestor_incidencias.incidencias: ~12 rows (aproximadamente)
+-- Volcando datos para la tabla pi_gestor_incidencias.incidencias: ~14 rows (aproximadamente)
 DELETE FROM `incidencias`;
 INSERT INTO `incidencias` (`id`, `fk_estado`, `fk_usuario`, `descripcion`, `observaciones`, `fecha`) VALUES
-	(1, 1, 9, 'Incidencia de sistema 36', 'Observación automática', '2026-01-28'),
+	(1, 2, 9, 'Incidencia de sistema 36', 'Observación automática', '2026-01-28'),
 	(2, 2, 1, 'Incidencia de sistema 269', 'Observación automática', '2026-02-19'),
 	(3, 3, 6, 'Incidencia de sistema 344', 'Observación automática', '2026-02-13'),
 	(4, 2, 4, 'Incidencia de sistema 467', 'Observación automática', '2026-02-09'),
@@ -62,7 +63,9 @@ INSERT INTO `incidencias` (`id`, `fk_estado`, `fk_usuario`, `descripcion`, `obse
 	(9, 3, 3, 'Incidencia de sistema 817', 'Observación automática', '2026-02-13'),
 	(10, 1, 4, 'Incidencia de sistema 634', 'Observación automática', '2026-02-14'),
 	(11, 1, 1, 'Hola, prueba de que esto funciona', '1234412412421412', '2026-05-24'),
-	(12, 1, 2, 'Prueba de usuario comun', 'A ver si esta se ve', '2026-05-24');
+	(12, 3, 2, 'Prueba de usuario comun', 'A ver si esta se ve', '2026-05-24'),
+	(13, 1, 2, 'Hola esto funciona', 'Esto funciona?\r\n', '2026-05-29'),
+	(14, 1, 1, 'Test', 'Test obs', '2026-06-03');
 
 -- Volcando estructura para tabla pi_gestor_incidencias.usuarios
 CREATE TABLE IF NOT EXISTS `usuarios` (
