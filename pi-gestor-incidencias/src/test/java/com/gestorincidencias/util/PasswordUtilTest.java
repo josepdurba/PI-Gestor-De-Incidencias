@@ -1,7 +1,7 @@
+package com.gestorincidencias.util;
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-
-import com.gestorincidencias.util.PasswordUtil;
 
 class PasswordUtilTest {
 

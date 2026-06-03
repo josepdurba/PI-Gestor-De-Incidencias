@@ -1,7 +1,8 @@
+package com.gestorincidencias.dao;
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-import com.gestorincidencias.dao.UsuarioDAO;
 import com.gestorincidencias.model.Usuario;
 
 class UsuarioDAOTest {
@@ -14,7 +15,7 @@ class UsuarioDAOTest {
         Usuario u = dao.login("Paco", "1234");
 
         assertNotNull(u);
-        assertEquals("admin", u.getNombre());
+        assertEquals("Paco", u.getNombre());
         assertTrue(u.getId() > 0);
     }
 
