@@ -476,4 +476,8 @@ textarea.error{
     .logo-fixed {
         width: 70px;
     }
+
+    .estado-row.estado-header .estado-box{
+    background-color: #340505:
+    color: white;}
 }
